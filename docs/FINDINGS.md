@@ -23,6 +23,11 @@ folder, pointed at the real `arcprize.org` API with a free developer key
 (see `../README.md` for exact steps). This matters: none of these bugs were
 visible from unit tests alone. Every one needed a real game.
 
+The actual code at each build stage is preserved in [`stages/`](stages/)
+(not just described here), the scripts that produced the evidence below
+are in [`../scripts/diagnostics/`](../scripts/diagnostics/), and the raw
+live-run logs are in [`logs/`](logs/).
+
 ---
 
 ## Bug #1 — background animation poisoned the state-deduplication hash

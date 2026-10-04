@@ -1,0 +1,117 @@
+https://arcprize.org/api/games
+2026-10-04 19:20:45,899 | INFO | Game list: ['ls20-9607627b']
+INFO:arc_agi.scorecard:Initialized ScorecardManager with idle_for=0:15:00 and max_open_for=3 days, 0:00:00
+2026-10-04 19:20:48 | INFO | Successfully fetched 25 environment(s) from API
+2026-10-04 19:20:48,322 | INFO | Successfully fetched 25 environment(s) from API
+***** MAKING SCORECARD
+2026-10-04 19:20:51 | INFO | Created new scorecard: 45215a6e-739b-45c0-a415-c63ad51ae643
+2026-10-04 19:20:51,352 | INFO | Created new scorecard: 45215a6e-739b-45c0-a415-c63ad51ae643
+***** MAKING ALL AGENTS with card id: 45215a6e-739b-45c0-a415-c63ad51ae643
+2026-10-04 19:20:53 | INFO | Successfully fetched metadata for game ls20
+2026-10-04 19:20:53,506 | INFO | Successfully fetched metadata for game ls20
+2026-10-04 19:20:56 | INFO | Successfully reset game ls20-9607627b, guid=a22e74ce-7e1b-4d1c-a14e-88301cafc6b9, scorecard_id=45215a6e-739b-45c0-a415-c63ad51ae643
+2026-10-04 19:20:56,058 | INFO | Successfully reset game ls20-9607627b, guid=a22e74ce-7e1b-4d1c-a14e-88301cafc6b9, scorecard_id=45215a6e-739b-45c0-a415-c63ad51ae643
+2026-10-04 19:20:56,059 | INFO | created new recording for ls20-9607627b.myagent into recordings/ls20-9607627b.myagent.1611151d-7763-4345-a4ee-db4f4463350c.recording.jsonl
+[DEBUG t=0] avatar_color=None avatar_pos=None n_deltas=0 walls=[] used_bfs=False chosen=4 n_rare_targets=72 color_hist={0: 3, 1: 2, 3: 892, 4: 2609, 5: 439, 8: 12, 9: 45, 11: 84, 12: 10} debug_bfs=None
+2026-10-04 19:20:56,574 | INFO | ls20-9607627b - ACTION4: count 0, levels completed 0, avg fps 0.0)
+[DEBUG t=1] avatar_color=None avatar_pos=None n_deltas=0 walls=[] used_bfs=False chosen=1 n_rare_targets=72 color_hist={0: 3, 1: 2, 3: 894, 4: 2609, 5: 439, 8: 12, 9: 45, 11: 82, 12: 10} debug_bfs=None
+2026-10-04 19:20:57,262 | INFO | ls20-9607627b - ACTION1: count 1, levels completed 0, avg fps 0.83)
+[DEBUG t=2] avatar_color=9 avatar_pos=(21, 46) n_deltas=2 walls=[] used_bfs=True chosen=1 n_rare_targets=107 color_hist={0: 3, 1: 2, 3: 896, 4: 2609, 5: 439, 8: 12, 9: 45, 11: 80, 12: 10} debug_bfs=path_found=True path_len=7 legal_ids=[1, 2, 3, 4] deltas={4: (2, 0), 1: (0, -2)} visited=44 hit_cap=False n_targets=107 first3targets=[(21, 31), (21, 32), (22, 32)]
+2026-10-04 19:20:57,762 | INFO | ls20-9607627b - ACTION1: count 2, levels completed 0, avg fps 1.18)
+[DEBUG t=3] avatar_color=9 avatar_pos=(21, 45) n_deltas=2 walls=[] used_bfs=True chosen=1 n_rare_targets=105 color_hist={0: 3, 1: 2, 3: 898, 4: 2609, 5: 439, 8: 12, 9: 45, 11: 78, 12: 10} debug_bfs=path_found=True path_len=6 legal_ids=[1, 2, 3, 4] deltas={4: (2, 0), 1: (0, -2)} visited=35 hit_cap=False n_targets=105 first3targets=[(21, 31), (21, 32), (22, 32)]
+2026-10-04 19:20:58,569 | INFO | ls20-9607627b - ACTION1: count 3, levels completed 0, avg fps 1.2)
+[DEBUG t=4] avatar_color=9 avatar_pos=(21, 43) n_deltas=2 walls=[] used_bfs=True chosen=1 n_rare_targets=103 color_hist={0: 3, 1: 2, 3: 900, 4: 2609, 5: 439, 8: 12, 9: 45, 11: 76, 12: 10} debug_bfs=path_found=True path_len=5 legal_ids=[1, 2, 3, 4] deltas={4: (2, 0), 1: (0, -2)} visited=27 hit_cap=False n_targets=103 first3targets=[(21, 31), (21, 32), (22, 32)]
+2026-10-04 19:20:59,328 | INFO | ls20-9607627b - ACTION1: count 4, levels completed 0, avg fps 1.23)
+[DEBUG t=5] avatar_color=9 avatar_pos=(21, 41) n_deltas=2 walls=[] used_bfs=True chosen=1 n_rare_targets=101 color_hist={0: 3, 1: 2, 3: 902, 4: 2609, 5: 439, 8: 12, 9: 45, 11: 74, 12: 10} debug_bfs=path_found=True path_len=4 legal_ids=[1, 2, 3, 4] deltas={4: (2, 0), 1: (0, -2)} visited=20 hit_cap=False n_targets=101 first3targets=[(21, 31), (21, 32), (22, 32)]
+2026-10-04 19:21:00,180 | INFO | ls20-9607627b - ACTION1: count 5, levels completed 0, avg fps 1.21)
+[DEBUG t=6] avatar_color=9 avatar_pos=(21, 41) n_deltas=2 walls=[3] used_bfs=False chosen=2 n_rare_targets=99 color_hist={0: 3, 1: 2, 3: 904, 4: 2609, 5: 439, 8: 12, 9: 45, 11: 72, 12: 10} debug_bfs=path_found=False path_len=None legal_ids=[1, 2, 3, 4] deltas={4: (2, 0), 1: (0, -2)} visited=1 hit_cap=False n_targets=99 first3targets=[(21, 31), (21, 32), (22, 32)]
+2026-10-04 19:21:01,050 | INFO | ls20-9607627b - ACTION2: count 6, levels completed 0, avg fps 1.2)
+[DEBUG t=7] avatar_color=9 avatar_pos=(21, 43) n_deltas=3 walls=[3] used_bfs=False chosen=1 n_rare_targets=97 color_hist={0: 3, 1: 2, 3: 906, 4: 2609, 5: 439, 8: 12, 9: 45, 11: 70, 12: 10} debug_bfs=path_found=False path_len=None legal_ids=[1, 2, 3, 4] deltas={4: (2, 0), 1: (0, -2), 2: (0, 2)} visited=1 hit_cap=False n_targets=97 first3targets=[(21, 31), (21, 32), (22, 32)]
+2026-10-04 19:21:01,758 | INFO | ls20-9607627b - ACTION1: count 7, levels completed 0, avg fps 1.23)
+[DEBUG t=8] avatar_color=9 avatar_pos=(21, 41) n_deltas=3 walls=[3] used_bfs=False chosen=4 n_rare_targets=95 color_hist={0: 3, 1: 2, 3: 908, 4: 2609, 5: 439, 8: 12, 9: 45, 11: 68, 12: 10} debug_bfs=path_found=False path_len=None legal_ids=[1, 2, 3, 4] deltas={4: (2, 0), 1: (0, -2), 2: (0, 2)} visited=1 hit_cap=False n_targets=95 first3targets=[(21, 31), (21, 32), (22, 32)]
+2026-10-04 19:21:03,137 | INFO | ls20-9607627b - ACTION4: count 8, levels completed 0, avg fps 1.13)
+[DEBUG t=9] avatar_color=9 avatar_pos=(23, 41) n_deltas=3 walls=[3] used_bfs=False chosen=1 n_rare_targets=93 color_hist={0: 3, 1: 2, 3: 910, 4: 2609, 5: 439, 8: 12, 9: 45, 11: 66, 12: 10} debug_bfs=path_found=False path_len=None legal_ids=[1, 2, 3, 4] deltas={4: (2, 0), 1: (0, -2), 2: (0, 2)} visited=26 hit_cap=False n_targets=93 first3targets=[(21, 31), (21, 32), (22, 32)]
+2026-10-04 19:21:03,938 | INFO | ls20-9607627b - ACTION1: count 9, levels completed 0, avg fps 1.14)
+[DEBUG t=10] avatar_color=9 avatar_pos=(23, 41) n_deltas=3 walls=[3] used_bfs=False chosen=1 n_rare_targets=91 color_hist={0: 3, 1: 2, 3: 912, 4: 2609, 5: 439, 8: 12, 9: 45, 11: 64, 12: 10} debug_bfs=path_found=False path_len=None legal_ids=[1, 2, 3, 4] deltas={4: (2, 0), 1: (0, -2), 2: (0, 2)} visited=26 hit_cap=False n_targets=91 first3targets=[(21, 31), (21, 32), (22, 32)]
+2026-10-04 19:21:05,632 | INFO | ls20-9607627b - ACTION1: count 10, levels completed 0, avg fps 1.04)
+[DEBUG t=11] avatar_color=9 avatar_pos=(23, 41) n_deltas=3 walls=[3] used_bfs=False chosen=4 n_rare_targets=89 color_hist={0: 3, 1: 2, 3: 914, 4: 2609, 5: 439, 8: 12, 9: 45, 11: 62, 12: 10} debug_bfs=path_found=False path_len=None legal_ids=[1, 2, 3, 4] deltas={4: (2, 0), 1: (0, -2), 2: (0, 2)} visited=26 hit_cap=False n_targets=89 first3targets=[(21, 31), (21, 32), (22, 32)]
+2026-10-04 19:21:06,461 | INFO | ls20-9607627b - ACTION4: count 11, levels completed 0, avg fps 1.06)
+[DEBUG t=12] avatar_color=9 avatar_pos=(25, 41) n_deltas=3 walls=[3] used_bfs=False chosen=1 n_rare_targets=87 color_hist={0: 3, 1: 2, 3: 916, 4: 2609, 5: 439, 8: 12, 9: 45, 11: 60, 12: 10} debug_bfs=path_found=False path_len=None legal_ids=[1, 2, 3, 4] deltas={4: (2, 0), 1: (0, -2), 2: (0, 2)} visited=25 hit_cap=False n_targets=87 first3targets=[(21, 31), (21, 32), (22, 32)]
+2026-10-04 19:21:07,278 | INFO | ls20-9607627b - ACTION1: count 12, levels completed 0, avg fps 1.07)
+[DEBUG t=13] avatar_color=9 avatar_pos=(25, 41) n_deltas=3 walls=[3, 4] used_bfs=False chosen=3 n_rare_targets=85 color_hist={0: 3, 1: 2, 3: 918, 4: 2609, 5: 439, 8: 12, 9: 45, 11: 58, 12: 10} debug_bfs=path_found=False path_len=None legal_ids=[1, 2, 3, 4] deltas={4: (2, 0), 1: (0, -2), 2: (0, 2)} visited=1 hit_cap=False n_targets=85 first3targets=[(21, 31), (21, 32), (22, 32)]
+2026-10-04 19:21:09,017 | INFO | ls20-9607627b - ACTION3: count 13, levels completed 0, avg fps 1.0)
+[DEBUG t=14] avatar_color=9 avatar_pos=(23, 41) n_deltas=4 walls=[3, 4] used_bfs=False chosen=4 n_rare_targets=83 color_hist={0: 3, 1: 2, 3: 920, 4: 2609, 5: 439, 8: 12, 9: 45, 11: 56, 12: 10} debug_bfs=path_found=False path_len=None legal_ids=[1, 2, 3, 4] deltas={4: (2, 0), 1: (0, -2), 2: (0, 2), 3: (-2, 0)} visited=1 hit_cap=False n_targets=83 first3targets=[(21, 31), (21, 32), (22, 32)]
+2026-10-04 19:21:09,818 | INFO | ls20-9607627b - ACTION4: count 14, levels completed 0, avg fps 1.02)
+[DEBUG t=15] avatar_color=9 avatar_pos=(11, 48) n_deltas=4 walls=[3, 4] used_bfs=False chosen=4 n_rare_targets=81 color_hist={0: 3, 1: 2, 3: 922, 4: 2609, 5: 439, 8: 12, 9: 45, 11: 54, 12: 10} debug_bfs=path_found=False path_len=None legal_ids=[1, 2, 3, 4] deltas={4: (2, 0), 1: (0, -2), 2: (0, 2), 3: (-2, 0)} visited=1 hit_cap=False n_targets=81 first3targets=[(21, 31), (21, 32), (22, 32)]
+2026-10-04 19:21:11,547 | INFO | ls20-9607627b - ACTION4: count 15, levels completed 0, avg fps 0.97)
+[DEBUG t=16] avatar_color=9 avatar_pos=(11, 48) n_deltas=4 walls=[3, 4] used_bfs=False chosen=4 n_rare_targets=79 color_hist={0: 3, 1: 2, 3: 924, 4: 2609, 5: 439, 8: 12, 9: 45, 11: 52, 12: 10} debug_bfs=path_found=False path_len=None legal_ids=[1, 2, 3, 4] deltas={4: (2, 0), 1: (0, -2), 2: (0, 2), 3: (-2, 0)} visited=1 hit_cap=False n_targets=79 first3targets=[(21, 31), (21, 32), (22, 32)]
+2026-10-04 19:21:12,754 | INFO | ls20-9607627b - ACTION4: count 16, levels completed 0, avg fps 0.96)
+[DEBUG t=17] avatar_color=9 avatar_pos=(11, 48) n_deltas=4 walls=[3, 4] used_bfs=False chosen=1 n_rare_targets=77 color_hist={0: 3, 1: 2, 3: 926, 4: 2609, 5: 439, 8: 12, 9: 45, 11: 50, 12: 10} debug_bfs=path_found=False path_len=None legal_ids=[1, 2, 3, 4] deltas={4: (2, 0), 1: (0, -2), 2: (0, 2), 3: (-2, 0)} visited=1 hit_cap=False n_targets=77 first3targets=[(21, 31), (21, 32), (22, 32)]
+2026-10-04 19:21:13,563 | INFO | ls20-9607627b - ACTION1: count 17, levels completed 0, avg fps 0.97)
+[DEBUG t=18] avatar_color=9 avatar_pos=(11, 48) n_deltas=4 walls=[3, 4] used_bfs=False chosen=3 n_rare_targets=75 color_hist={0: 3, 1: 2, 3: 928, 4: 2609, 5: 439, 8: 12, 9: 45, 11: 48, 12: 10} debug_bfs=path_found=False path_len=None legal_ids=[1, 2, 3, 4] deltas={4: (2, 0), 1: (0, -2), 2: (0, 2), 3: (-2, 0)} visited=1 hit_cap=False n_targets=75 first3targets=[(21, 31), (21, 32), (22, 32)]
+2026-10-04 19:21:15,240 | INFO | ls20-9607627b - ACTION3: count 18, levels completed 0, avg fps 0.94)
+[DEBUG t=19] avatar_color=9 avatar_pos=(11, 48) n_deltas=4 walls=[3, 4] used_bfs=False chosen=4 n_rare_targets=73 color_hist={0: 3, 1: 2, 3: 930, 4: 2609, 5: 439, 8: 12, 9: 45, 11: 46, 12: 10} debug_bfs=path_found=False path_len=None legal_ids=[1, 2, 3, 4] deltas={4: (2, 0), 1: (0, -2), 2: (0, 2), 3: (-2, 0)} visited=1 hit_cap=False n_targets=73 first3targets=[(21, 31), (21, 32), (22, 32)]
+2026-10-04 19:21:16,251 | INFO | ls20-9607627b - ACTION4: count 19, levels completed 0, avg fps 0.94)
+2026-10-04 19:21:17,070 | INFO | ls20-9607627b - ACTION2: count 20, levels completed 0, avg fps 0.95)
+2026-10-04 19:21:19,064 | INFO | ls20-9607627b - ACTION4: count 21, levels completed 0, avg fps 0.91)
+2026-10-04 19:21:19,905 | INFO | ls20-9607627b - ACTION2: count 22, levels completed 0, avg fps 0.92)
+2026-10-04 19:21:20,811 | INFO | ls20-9607627b - ACTION1: count 23, levels completed 0, avg fps 0.93)
+2026-10-04 19:21:21,743 | INFO | ls20-9607627b - ACTION1: count 24, levels completed 0, avg fps 0.93)
+2026-10-04 19:21:22,546 | INFO | ls20-9607627b - ACTION3: count 25, levels completed 0, avg fps 0.94)
+2026-10-04 19:21:24,198 | INFO | ls20-9607627b - ACTION3: count 26, levels completed 0, avg fps 0.92)
+2026-10-04 19:21:24,980 | INFO | ls20-9607627b - ACTION2: count 27, levels completed 0, avg fps 0.93)
+2026-10-04 19:21:25,758 | INFO | ls20-9607627b - ACTION2: count 28, levels completed 0, avg fps 0.94)
+2026-10-04 19:21:27,451 | INFO | ls20-9607627b - ACTION3: count 29, levels completed 0, avg fps 0.92)
+2026-10-04 19:21:29,230 | INFO | ls20-9607627b - ACTION3: count 30, levels completed 0, avg fps 0.9)
+2026-10-04 19:21:30,006 | INFO | ls20-9607627b - ACTION1: count 31, levels completed 0, avg fps 0.91)
+2026-10-04 19:21:30,789 | INFO | ls20-9607627b - ACTION4: count 32, levels completed 0, avg fps 0.92)
+2026-10-04 19:21:31,587 | INFO | ls20-9607627b - ACTION4: count 33, levels completed 0, avg fps 0.93)
+2026-10-04 19:21:32,711 | INFO | ls20-9607627b - ACTION4: count 34, levels completed 0, avg fps 0.93)
+2026-10-04 19:21:33,508 | INFO | ls20-9607627b - ACTION1: count 35, levels completed 0, avg fps 0.93)
+2026-10-04 19:21:34,290 | INFO | ls20-9607627b - ACTION2: count 36, levels completed 0, avg fps 0.94)
+2026-10-04 19:21:35,749 | INFO | ls20-9607627b - ACTION3: count 37, levels completed 0, avg fps 0.93)
+2026-10-04 19:21:36,563 | INFO | ls20-9607627b - ACTION2: count 38, levels completed 0, avg fps 0.94)
+2026-10-04 19:21:37,353 | INFO | ls20-9607627b - ACTION4: count 39, levels completed 0, avg fps 0.94)
+2026-10-04 19:21:38,160 | INFO | ls20-9607627b - ACTION2: count 40, levels completed 0, avg fps 0.95)
+2026-10-04 19:21:38,960 | INFO | ls20-9607627b - ACTION1: count 41, levels completed 0, avg fps 0.96)
+2026-10-04 19:21:42,004 | INFO | ls20-9607627b - ACTION4: count 42, levels completed 0, avg fps 0.91)
+2026-10-04 19:21:43,486 | INFO | ls20-9607627b - ACTION2: count 43, levels completed 0, avg fps 0.91)
+2026-10-04 19:21:44,150 | INFO | ls20-9607627b - ACTION1: count 44, levels completed 0, avg fps 0.91)
+2026-10-04 19:21:45,153 | INFO | ls20-9607627b - ACTION3: count 45, levels completed 0, avg fps 0.92)
+2026-10-04 19:21:45,823 | INFO | ls20-9607627b - ACTION4: count 46, levels completed 0, avg fps 0.92)
+2026-10-04 19:21:46,468 | INFO | ls20-9607627b - ACTION3: count 47, levels completed 0, avg fps 0.93)
+2026-10-04 19:21:47,171 | INFO | ls20-9607627b - ACTION4: count 48, levels completed 0, avg fps 0.94)
+2026-10-04 19:21:47,842 | INFO | ls20-9607627b - ACTION1: count 49, levels completed 0, avg fps 0.95)
+2026-10-04 19:21:48,954 | INFO | ls20-9607627b - ACTION1: count 50, levels completed 0, avg fps 0.95)
+2026-10-04 19:21:50,023 | INFO | ls20-9607627b - ACTION3: count 51, levels completed 0, avg fps 0.95)
+2026-10-04 19:21:51,198 | INFO | ls20-9607627b - ACTION3: count 52, levels completed 0, avg fps 0.94)
+2026-10-04 19:21:52,236 | INFO | ls20-9607627b - ACTION3: count 53, levels completed 0, avg fps 0.94)
+2026-10-04 19:21:53,666 | INFO | ls20-9607627b - ACTION1: count 54, levels completed 0, avg fps 0.94)
+2026-10-04 19:21:54,709 | INFO | ls20-9607627b - ACTION3: count 55, levels completed 0, avg fps 0.94)
+2026-10-04 19:21:55,659 | INFO | ls20-9607627b - ACTION2: count 56, levels completed 0, avg fps 0.94)
+2026-10-04 19:21:56,580 | INFO | ls20-9607627b - ACTION4: count 57, levels completed 0, avg fps 0.94)
+2026-10-04 19:21:57,556 | INFO | ls20-9607627b - ACTION4: count 58, levels completed 0, avg fps 0.94)
+2026-10-04 19:21:58,512 | INFO | ls20-9607627b - ACTION3: count 59, levels completed 0, avg fps 0.94)
+2026-10-04 19:21:59,632 | INFO | ls20-9607627b - ACTION1: count 60, levels completed 0, avg fps 0.94)
+2026-10-04 19:22:00,744 | INFO | ls20-9607627b - ACTION4: count 61, levels completed 0, avg fps 0.94)
+2026-10-04 19:22:01,655 | INFO | ls20-9607627b - ACTION4: count 62, levels completed 0, avg fps 0.95)
+2026-10-04 19:22:02,563 | INFO | ls20-9607627b - ACTION2: count 63, levels completed 0, avg fps 0.95)
+2026-10-04 19:22:03,432 | INFO | ls20-9607627b - ACTION2: count 64, levels completed 0, avg fps 0.95)
+2026-10-04 19:22:05,451 | INFO | ls20-9607627b - ACTION2: count 65, levels completed 0, avg fps 0.94)
+2026-10-04 19:22:06,471 | INFO | ls20-9607627b - ACTION2: count 66, levels completed 0, avg fps 0.94)
+2026-10-04 19:22:07,915 | INFO | ls20-9607627b - ACTION1: count 67, levels completed 0, avg fps 0.93)
+2026-10-04 19:22:08,807 | INFO | ls20-9607627b - ACTION1: count 68, levels completed 0, avg fps 0.93)
+2026-10-04 19:22:09,678 | INFO | ls20-9607627b - ACTION3: count 69, levels completed 0, avg fps 0.94)
+2026-10-04 19:22:10,552 | INFO | ls20-9607627b - ACTION1: count 70, levels completed 0, avg fps 0.94)
+2026-10-04 19:22:11,465 | INFO | ls20-9607627b - ACTION1: count 71, levels completed 0, avg fps 0.94)
+2026-10-04 19:22:13,301 | INFO | ls20-9607627b - ACTION4: count 72, levels completed 0, avg fps 0.93)
+2026-10-04 19:22:14,453 | INFO | ls20-9607627b - ACTION2: count 73, levels completed 0, avg fps 0.93)
+2026-10-04 19:22:15,338 | INFO | ls20-9607627b - ACTION3: count 74, levels completed 0, avg fps 0.93)
+2026-10-04 19:22:17,101 | INFO | ls20-9607627b - ACTION1: count 75, levels completed 0, avg fps 0.93)
+2026-10-04 19:22:18,860 | INFO | ls20-9607627b - ACTION2: count 76, levels completed 0, avg fps 0.92)
+2026-10-04 19:22:20,558 | INFO | ls20-9607627b - ACTION2: count 77, levels completed 0, avg fps 0.91)
+2026-10-04 19:22:21,428 | INFO | ls20-9607627b - ACTION2: count 78, levels completed 0, avg fps 0.91)
+2026-10-04 19:22:22,204 | INFO | ls20-9607627b - ACTION3: count 79, levels completed 0, avg fps 0.92)
+2026-10-04 19:22:23,026 | INFO | ls20-9607627b - ACTION1: count 80, levels completed 0, avg fps 0.92)
+2026-10-04 19:22:23,027 | INFO | recording for ls20-9607627b.myagent is available in recordings/ls20-9607627b.myagent.1611151d-7763-4345-a4ee-db4f4463350c.recording.jsonl
+2026-10-04 19:22:23,027 | INFO | Exiting: agent reached MAX_ACTIONS of 80, took 86.96 seconds (0.93 average fps)

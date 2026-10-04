@@ -1,0 +1,271 @@
+https://arcprize.org/api/games
+2026-10-04 22:23:35,847 | INFO | Game list: ['ls20-9607627b']
+INFO:arc_agi.scorecard:Initialized ScorecardManager with idle_for=0:15:00 and max_open_for=3 days, 0:00:00
+2026-10-04 22:23:37 | INFO | Successfully fetched 25 environment(s) from API
+2026-10-04 22:23:37,407 | INFO | Successfully fetched 25 environment(s) from API
+***** MAKING SCORECARD
+2026-10-04 22:23:38 | INFO | Created new scorecard: 5b57f142-61de-496c-9fa6-7d379eec8ee1
+2026-10-04 22:23:38,932 | INFO | Created new scorecard: 5b57f142-61de-496c-9fa6-7d379eec8ee1
+***** MAKING ALL AGENTS with card id: 5b57f142-61de-496c-9fa6-7d379eec8ee1
+2026-10-04 22:23:40 | INFO | Successfully fetched metadata for game ls20
+2026-10-04 22:23:40,656 | INFO | Successfully fetched metadata for game ls20
+2026-10-04 22:23:42 | INFO | Successfully reset game ls20-9607627b, guid=bb0c00a6-b2d5-433d-a061-a0d0da4b63ca, scorecard_id=5b57f142-61de-496c-9fa6-7d379eec8ee1
+2026-10-04 22:23:42,205 | INFO | Successfully reset game ls20-9607627b, guid=bb0c00a6-b2d5-433d-a061-a0d0da4b63ca, scorecard_id=5b57f142-61de-496c-9fa6-7d379eec8ee1
+2026-10-04 22:23:42,205 | INFO | created new recording for ls20-9607627b.myagent into recordings/ls20-9607627b.myagent.1997ae6b-ce0a-4d4c-8d0a-71bb3900c757.recording.jsonl
+[DEBUG t=0] avatar_pos=None target=None path_len=None chosen=3 n_blocked_edges=0
+2026-10-04 22:23:42,539 | INFO | ls20-9607627b - ACTION3: count 0, levels completed 0, avg fps 0.0)
+[DEBUG t=1] avatar_pos=None target=None path_len=None chosen=1 n_blocked_edges=0
+2026-10-04 22:23:42,921 | INFO | ls20-9607627b - ACTION1: count 1, levels completed 0, avg fps 1.41)
+[DEBUG t=2] avatar_pos=None target=None path_len=None chosen=3 n_blocked_edges=0
+2026-10-04 22:23:43,312 | INFO | ls20-9607627b - ACTION3: count 2, levels completed 0, avg fps 1.82)
+[DEBUG t=3] avatar_pos=None target=None path_len=None chosen=4 n_blocked_edges=0
+2026-10-04 22:23:43,712 | INFO | ls20-9607627b - ACTION4: count 3, levels completed 0, avg fps 2.0)
+[DEBUG t=4] avatar_pos=(31, 48) target=None path_len=None chosen=3 n_blocked_edges=0
+2026-10-04 22:23:44,051 | INFO | ls20-9607627b - ACTION3: count 4, levels completed 0, avg fps 2.17)
+[DEBUG t=5] avatar_pos=(26, 48) target=None path_len=None chosen=2 n_blocked_edges=0
+2026-10-04 22:23:44,482 | INFO | ls20-9607627b - ACTION2: count 5, levels completed 0, avg fps 2.2)
+[DEBUG t=6] avatar_pos=(26, 48) target=None path_len=None chosen=2 n_blocked_edges=1
+2026-10-04 22:23:44,831 | INFO | ls20-9607627b - ACTION2: count 6, levels completed 0, avg fps 2.29)
+[DEBUG t=7] avatar_pos=(26, 48) target=None path_len=None chosen=2 n_blocked_edges=1
+2026-10-04 22:23:45,228 | INFO | ls20-9607627b - ACTION2: count 7, levels completed 0, avg fps 2.32)
+[DEBUG t=8] avatar_pos=(26, 48) target=None path_len=None chosen=2 n_blocked_edges=1
+2026-10-04 22:23:45,599 | INFO | ls20-9607627b - ACTION2: count 8, levels completed 0, avg fps 2.36)
+[DEBUG t=9] avatar_pos=(26, 48) target=None path_len=None chosen=4 n_blocked_edges=1
+2026-10-04 22:23:45,933 | INFO | ls20-9607627b - ACTION4: count 9, levels completed 0, avg fps 2.42)
+[DEBUG t=10] avatar_pos=(31, 48) target=None path_len=None chosen=4 n_blocked_edges=1
+2026-10-04 22:23:46,320 | INFO | ls20-9607627b - ACTION4: count 10, levels completed 0, avg fps 2.43)
+[DEBUG t=11] avatar_pos=(36, 48) target=None path_len=None chosen=3 n_blocked_edges=1
+2026-10-04 22:23:46,889 | INFO | ls20-9607627b - ACTION3: count 11, levels completed 0, avg fps 2.35)
+[DEBUG t=12] avatar_pos=None target=None path_len=None chosen=4 n_blocked_edges=1
+2026-10-04 22:23:47,655 | INFO | ls20-9607627b - ACTION4: count 12, levels completed 0, avg fps 2.21)
+[DEBUG t=13] avatar_pos=(36, 48) target=None path_len=None chosen=4 n_blocked_edges=1
+2026-10-04 22:23:48,360 | INFO | ls20-9607627b - ACTION4: count 13, levels completed 0, avg fps 2.11)
+[DEBUG t=14] avatar_pos=(41, 48) target=None path_len=None chosen=3 n_blocked_edges=1
+2026-10-04 22:23:48,785 | INFO | ls20-9607627b - ACTION3: count 14, levels completed 0, avg fps 2.13)
+[DEBUG t=15] avatar_pos=(36, 48) target=None path_len=None chosen=4 n_blocked_edges=1
+2026-10-04 22:23:49,176 | INFO | ls20-9607627b - ACTION4: count 15, levels completed 0, avg fps 2.15)
+[DEBUG t=16] avatar_pos=(41, 48) target=None path_len=None chosen=1 n_blocked_edges=1
+2026-10-04 22:23:49,569 | INFO | ls20-9607627b - ACTION1: count 16, levels completed 0, avg fps 2.17)
+[DEBUG t=17] avatar_pos=(41, 43) target=(21, 33) path_len=6 chosen=3 n_blocked_edges=1
+2026-10-04 22:23:49,918 | INFO | ls20-9607627b - ACTION3: count 17, levels completed 0, avg fps 2.2)
+[DEBUG t=18] avatar_pos=(36, 43) target=(21, 33) path_len=5 chosen=3 n_blocked_edges=1
+2026-10-04 22:23:50,241 | INFO | ls20-9607627b - ACTION3: count 18, levels completed 0, avg fps 2.24)
+[DEBUG t=19] avatar_pos=(36, 43) target=(21, 33) path_len=5 chosen=1 n_blocked_edges=2
+2026-10-04 22:23:50,618 | INFO | ls20-9607627b - ACTION1: count 19, levels completed 0, avg fps 2.26)
+[DEBUG t=20] avatar_pos=(36, 38) target=(21, 33) path_len=4 chosen=3 n_blocked_edges=2
+2026-10-04 22:23:50,990 | INFO | ls20-9607627b - ACTION3: count 20, levels completed 0, avg fps 2.28)
+[DEBUG t=21] avatar_pos=(36, 38) target=(21, 33) path_len=4 chosen=1 n_blocked_edges=3
+2026-10-04 22:23:51,369 | INFO | ls20-9607627b - ACTION1: count 21, levels completed 0, avg fps 2.29)
+[DEBUG t=22] avatar_pos=(36, 33) target=(21, 33) path_len=3 chosen=3 n_blocked_edges=3
+2026-10-04 22:23:51,737 | INFO | ls20-9607627b - ACTION3: count 22, levels completed 0, avg fps 2.31)
+[DEBUG t=23] avatar_pos=(36, 33) target=None path_len=None chosen=3 n_blocked_edges=4
+2026-10-04 22:23:52,159 | INFO | ls20-9607627b - ACTION3: count 23, levels completed 0, avg fps 2.31)
+[DEBUG t=24] avatar_pos=(36, 33) target=None path_len=None chosen=4 n_blocked_edges=4
+2026-10-04 22:23:52,585 | INFO | ls20-9607627b - ACTION4: count 24, levels completed 0, avg fps 2.31)
+[DEBUG t=25] avatar_pos=(41, 33) target=None path_len=None chosen=3 n_blocked_edges=4
+2026-10-04 22:23:52,992 | INFO | ls20-9607627b - ACTION3: count 25, levels completed 0, avg fps 2.32)
+[DEBUG t=26] avatar_pos=(36, 33) target=None path_len=None chosen=2 n_blocked_edges=4
+2026-10-04 22:23:53,368 | INFO | ls20-9607627b - ACTION2: count 26, levels completed 0, avg fps 2.33)
+[DEBUG t=27] avatar_pos=(36, 38) target=(21, 33) path_len=6 chosen=1 n_blocked_edges=4
+2026-10-04 22:23:53,687 | INFO | ls20-9607627b - ACTION1: count 27, levels completed 0, avg fps 2.35)
+[DEBUG t=28] avatar_pos=(36, 33) target=(21, 33) path_len=5 chosen=1 n_blocked_edges=4
+2026-10-04 22:23:54,039 | INFO | ls20-9607627b - ACTION1: count 28, levels completed 0, avg fps 2.37)
+[DEBUG t=29] avatar_pos=(36, 28) target=(21, 33) path_len=4 chosen=3 n_blocked_edges=4
+2026-10-04 22:23:54,365 | INFO | ls20-9607627b - ACTION3: count 29, levels completed 0, avg fps 2.39)
+[DEBUG t=30] avatar_pos=(31, 28) target=(21, 33) path_len=3 chosen=3 n_blocked_edges=4
+2026-10-04 22:23:54,745 | INFO | ls20-9607627b - ACTION3: count 30, levels completed 0, avg fps 2.39)
+[DEBUG t=31] avatar_pos=(26, 28) target=(21, 33) path_len=2 chosen=3 n_blocked_edges=4
+2026-10-04 22:23:55,120 | INFO | ls20-9607627b - ACTION3: count 31, levels completed 0, avg fps 2.4)
+[DEBUG t=32] avatar_pos=(21, 28) target=(21, 33) path_len=1 chosen=2 n_blocked_edges=4
+2026-10-04 22:23:58,155 | INFO | ls20-9607627b - ACTION2: count 32, levels completed 0, avg fps 2.01)
+[DEBUG t=33] avatar_pos=(21, 33) target=None path_len=None chosen=3 n_blocked_edges=4
+2026-10-04 22:24:02,718 | INFO | ls20-9607627b - ACTION3: count 33, levels completed 0, avg fps 1.61)
+[DEBUG t=34] avatar_pos=(16, 33) target=(21, 33) path_len=1 chosen=4 n_blocked_edges=4
+2026-10-04 22:24:06,623 | INFO | ls20-9607627b - ACTION4: count 34, levels completed 0, avg fps 1.39)
+[DEBUG t=35] avatar_pos=(21, 33) target=None path_len=None chosen=3 n_blocked_edges=4
+2026-10-04 22:24:10,052 | INFO | ls20-9607627b - ACTION3: count 35, levels completed 0, avg fps 1.26)
+[DEBUG t=36] avatar_pos=(16, 33) target=(21, 33) path_len=1 chosen=4 n_blocked_edges=4
+2026-10-04 22:24:15,676 | INFO | ls20-9607627b - ACTION4: count 36, levels completed 0, avg fps 1.08)
+[DEBUG t=37] avatar_pos=(21, 33) target=None path_len=None chosen=1 n_blocked_edges=4
+2026-10-04 22:24:19,268 | INFO | ls20-9607627b - ACTION1: count 37, levels completed 0, avg fps 1.0)
+[DEBUG t=38] avatar_pos=(21, 28) target=(21, 33) path_len=1 chosen=2 n_blocked_edges=4
+2026-10-04 22:24:26,723 | INFO | ls20-9607627b - ACTION2: count 38, levels completed 0, avg fps 0.85)
+[DEBUG t=39] avatar_pos=(21, 33) target=None path_len=None chosen=1 n_blocked_edges=4
+2026-10-04 22:24:35,441 | INFO | ls20-9607627b - ACTION1: count 39, levels completed 0, avg fps 0.73)
+[DEBUG t=40] avatar_pos=(21, 28) target=(21, 33) path_len=1 chosen=2 n_blocked_edges=4
+2026-10-04 22:25:05,287 | INFO | ls20-9607627b - ACTION2: count 40, levels completed 0, avg fps 0.48)
+[DEBUG t=41] avatar_pos=None target=None path_len=None chosen=2 n_blocked_edges=4
+2026-10-04 22:25:06,831 | INFO | ls20-9607627b - ACTION2: count 41, levels completed 0, avg fps 0.48)
+[DEBUG t=42] avatar_pos=(21, 38) target=(21, 33) path_len=1 chosen=1 n_blocked_edges=4
+2026-10-04 22:25:08,049 | INFO | ls20-9607627b - ACTION1: count 42, levels completed 0, avg fps 0.49)
+[DEBUG t=43] avatar_pos=None target=None path_len=None chosen=1 n_blocked_edges=4
+2026-10-04 22:25:09,391 | INFO | ls20-9607627b - ACTION1: count 43, levels completed 0, avg fps 0.49)
+[DEBUG t=44] avatar_pos=(21, 28) target=(21, 33) path_len=1 chosen=2 n_blocked_edges=4
+2026-10-04 22:25:15,106 | INFO | ls20-9607627b - ACTION2: count 44, levels completed 0, avg fps 0.47)
+[DEBUG t=45] avatar_pos=(36, 48) target=(21, 33) path_len=6 chosen=3 n_blocked_edges=4
+2026-10-04 22:25:16,048 | INFO | ls20-9607627b - ACTION3: count 45, levels completed 0, avg fps 0.48)
+[DEBUG t=46] avatar_pos=(31, 48) target=(21, 33) path_len=5 chosen=3 n_blocked_edges=4
+2026-10-04 22:25:17,070 | INFO | ls20-9607627b - ACTION3: count 46, levels completed 0, avg fps 0.48)
+[DEBUG t=47] avatar_pos=(26, 48) target=(21, 33) path_len=4 chosen=3 n_blocked_edges=4
+2026-10-04 22:25:18,171 | INFO | ls20-9607627b - ACTION3: count 47, levels completed 0, avg fps 0.49)
+[DEBUG t=48] avatar_pos=(21, 48) target=(21, 33) path_len=3 chosen=1 n_blocked_edges=4
+2026-10-04 22:25:19,314 | INFO | ls20-9607627b - ACTION1: count 48, levels completed 0, avg fps 0.49)
+[DEBUG t=49] avatar_pos=(21, 43) target=(21, 33) path_len=2 chosen=1 n_blocked_edges=4
+2026-10-04 22:25:20,273 | INFO | ls20-9607627b - ACTION1: count 49, levels completed 0, avg fps 0.5)
+[DEBUG t=50] avatar_pos=(21, 38) target=(21, 33) path_len=1 chosen=1 n_blocked_edges=4
+2026-10-04 22:25:23,423 | INFO | ls20-9607627b - ACTION1: count 50, levels completed 0, avg fps 0.49)
+[DEBUG t=51] avatar_pos=None target=None path_len=None chosen=3 n_blocked_edges=4
+2026-10-04 22:25:24,045 | INFO | ls20-9607627b - ACTION3: count 51, levels completed 0, avg fps 0.5)
+[DEBUG t=52] avatar_pos=(16, 33) target=(21, 33) path_len=1 chosen=4 n_blocked_edges=4
+2026-10-04 22:25:24,723 | INFO | ls20-9607627b - ACTION4: count 52, levels completed 0, avg fps 0.51)
+[DEBUG t=53] avatar_pos=None target=None path_len=None chosen=3 n_blocked_edges=4
+2026-10-04 22:25:25,327 | INFO | ls20-9607627b - ACTION3: count 53, levels completed 0, avg fps 0.51)
+[DEBUG t=54] avatar_pos=(16, 33) target=(21, 33) path_len=1 chosen=4 n_blocked_edges=4
+2026-10-04 22:25:26,020 | INFO | ls20-9607627b - ACTION4: count 54, levels completed 0, avg fps 0.52)
+[DEBUG t=55] avatar_pos=None target=None path_len=None chosen=2 n_blocked_edges=4
+2026-10-04 22:25:26,670 | INFO | ls20-9607627b - ACTION2: count 55, levels completed 0, avg fps 0.53)
+[DEBUG t=56] avatar_pos=(21, 38) target=(21, 33) path_len=1 chosen=1 n_blocked_edges=4
+2026-10-04 22:25:27,354 | INFO | ls20-9607627b - ACTION1: count 56, levels completed 0, avg fps 0.53)
+[DEBUG t=57] avatar_pos=None target=None path_len=None chosen=1 n_blocked_edges=4
+2026-10-04 22:25:28,186 | INFO | ls20-9607627b - ACTION1: count 57, levels completed 0, avg fps 0.54)
+[DEBUG t=58] avatar_pos=(21, 28) target=(21, 33) path_len=1 chosen=2 n_blocked_edges=4
+2026-10-04 22:25:30,592 | INFO | ls20-9607627b - ACTION2: count 58, levels completed 0, avg fps 0.54)
+[DEBUG t=59] avatar_pos=None target=None path_len=None chosen=4 n_blocked_edges=4
+2026-10-04 22:25:31,443 | INFO | ls20-9607627b - ACTION4: count 59, levels completed 0, avg fps 0.54)
+[DEBUG t=60] avatar_pos=(26, 33) target=(21, 33) path_len=1 chosen=3 n_blocked_edges=4
+2026-10-04 22:25:32,272 | INFO | ls20-9607627b - ACTION3: count 60, levels completed 0, avg fps 0.55)
+[DEBUG t=61] avatar_pos=None target=None path_len=None chosen=3 n_blocked_edges=4
+2026-10-04 22:25:33,072 | INFO | ls20-9607627b - ACTION3: count 61, levels completed 0, avg fps 0.55)
+[DEBUG t=62] avatar_pos=(16, 33) target=(21, 33) path_len=1 chosen=4 n_blocked_edges=4
+2026-10-04 22:25:33,905 | INFO | ls20-9607627b - ACTION4: count 62, levels completed 0, avg fps 0.56)
+[DEBUG t=63] avatar_pos=None target=None path_len=None chosen=4 n_blocked_edges=4
+2026-10-04 22:25:34,556 | INFO | ls20-9607627b - ACTION4: count 63, levels completed 0, avg fps 0.56)
+[DEBUG t=64] avatar_pos=(26, 33) target=(21, 33) path_len=1 chosen=3 n_blocked_edges=4
+2026-10-04 22:25:35,309 | INFO | ls20-9607627b - ACTION3: count 64, levels completed 0, avg fps 0.57)
+[DEBUG t=65] avatar_pos=None target=None path_len=None chosen=1 n_blocked_edges=4
+2026-10-04 22:25:36,069 | INFO | ls20-9607627b - ACTION1: count 65, levels completed 0, avg fps 0.57)
+[DEBUG t=66] avatar_pos=(21, 28) target=(21, 33) path_len=1 chosen=2 n_blocked_edges=4
+2026-10-04 22:25:38,535 | INFO | ls20-9607627b - ACTION2: count 66, levels completed 0, avg fps 0.57)
+[DEBUG t=67] avatar_pos=None target=None path_len=None chosen=3 n_blocked_edges=4
+2026-10-04 22:25:39,283 | INFO | ls20-9607627b - ACTION3: count 67, levels completed 0, avg fps 0.57)
+[DEBUG t=68] avatar_pos=(16, 33) target=(21, 33) path_len=1 chosen=4 n_blocked_edges=4
+2026-10-04 22:25:40,277 | INFO | ls20-9607627b - ACTION4: count 68, levels completed 0, avg fps 0.58)
+[DEBUG t=69] avatar_pos=None target=None path_len=None chosen=2 n_blocked_edges=4
+2026-10-04 22:25:41,288 | INFO | ls20-9607627b - ACTION2: count 69, levels completed 0, avg fps 0.58)
+[DEBUG t=70] avatar_pos=(21, 38) target=(21, 33) path_len=1 chosen=1 n_blocked_edges=4
+2026-10-04 22:25:42,411 | INFO | ls20-9607627b - ACTION1: count 70, levels completed 0, avg fps 0.58)
+[DEBUG t=71] avatar_pos=None target=None path_len=None chosen=4 n_blocked_edges=4
+2026-10-04 22:25:43,293 | INFO | ls20-9607627b - ACTION4: count 71, levels completed 0, avg fps 0.59)
+[DEBUG t=72] avatar_pos=(26, 33) target=(21, 33) path_len=1 chosen=3 n_blocked_edges=4
+2026-10-04 22:25:44,150 | INFO | ls20-9607627b - ACTION3: count 72, levels completed 0, avg fps 0.59)
+[DEBUG t=73] avatar_pos=None target=None path_len=None chosen=2 n_blocked_edges=4
+2026-10-04 22:25:44,927 | INFO | ls20-9607627b - ACTION2: count 73, levels completed 0, avg fps 0.59)
+[DEBUG t=74] avatar_pos=(21, 38) target=(21, 33) path_len=1 chosen=1 n_blocked_edges=4
+2026-10-04 22:25:46,742 | INFO | ls20-9607627b - ACTION1: count 74, levels completed 0, avg fps 0.59)
+[DEBUG t=75] avatar_pos=None target=None path_len=None chosen=2 n_blocked_edges=4
+2026-10-04 22:25:47,399 | INFO | ls20-9607627b - ACTION2: count 75, levels completed 0, avg fps 0.6)
+[DEBUG t=76] avatar_pos=(21, 38) target=(21, 33) path_len=1 chosen=1 n_blocked_edges=4
+2026-10-04 22:25:47,904 | INFO | ls20-9607627b - ACTION1: count 76, levels completed 0, avg fps 0.6)
+[DEBUG t=77] avatar_pos=None target=None path_len=None chosen=4 n_blocked_edges=4
+2026-10-04 22:25:48,380 | INFO | ls20-9607627b - ACTION4: count 77, levels completed 0, avg fps 0.61)
+[DEBUG t=78] avatar_pos=(26, 33) target=(21, 33) path_len=1 chosen=3 n_blocked_edges=4
+2026-10-04 22:25:48,854 | INFO | ls20-9607627b - ACTION3: count 78, levels completed 0, avg fps 0.62)
+[DEBUG t=79] avatar_pos=None target=None path_len=None chosen=4 n_blocked_edges=4
+2026-10-04 22:25:49,390 | INFO | ls20-9607627b - ACTION4: count 79, levels completed 0, avg fps 0.62)
+[DEBUG t=80] avatar_pos=(26, 33) target=(21, 33) path_len=1 chosen=3 n_blocked_edges=4
+2026-10-04 22:25:49,898 | INFO | ls20-9607627b - ACTION3: count 80, levels completed 0, avg fps 0.63)
+2026-10-04 22:25:49,899 | INFO | recording for ls20-9607627b.myagent is available in recordings/ls20-9607627b.myagent.1997ae6b-ce0a-4d4c-8d0a-71bb3900c757.recording.jsonl
+2026-10-04 22:25:49,899 | INFO | Exiting: agent reached MAX_ACTIONS of 80, took 127.69 seconds (0.63 average fps)
+2026-10-04 22:25:50 | INFO | Closed scorecard: 5b57f142-61de-496c-9fa6-7d379eec8ee1
+2026-10-04 22:25:50,459 | INFO | Closed scorecard: 5b57f142-61de-496c-9fa6-7d379eec8ee1
+2026-10-04 22:25:50,459 | INFO | --- FINAL SCORECARD REPORT ---
+2026-10-04 22:25:50,459 | INFO | {
+  "source_url": null,
+  "tags": [
+    "agent",
+    "myagent"
+  ],
+  "opaque": null,
+  "card_id": "5b57f142-61de-496c-9fa6-7d379eec8ee1",
+  "api_key": null,
+  "score": 0.0,
+  "environments": [
+    {
+      "id": "ls20-9607627b",
+      "runs": [
+        {
+          "id": null,
+          "guid": "bb0c00a6-b2d5-433d-a061-a0d0da4b63ca",
+          "score": 0.0,
+          "levels_completed": 0,
+          "actions": 81,
+          "resets": 0,
+          "state": "NOT_FINISHED",
+          "completed": false,
+          "level_scores": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "level_actions": [
+            81,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "level_baseline_actions": [
+            22,
+            123,
+            73,
+            84,
+            96,
+            192,
+            186
+          ],
+          "number_of_levels": null,
+          "number_of_environments": 0,
+          "message": null
+        }
+      ],
+      "score": 0.0,
+      "actions": 81,
+      "levels_completed": 0,
+      "completed": false,
+      "level_count": 7,
+      "resets": 0
+    }
+  ],
+  "tags_scores": [
+    {
+      "id": "keyboard",
+      "guid": null,
+      "score": 0.0,
+      "levels_completed": 0,
+      "actions": 81,
+      "resets": null,
+      "state": null,
+      "completed": null,
+      "level_scores": null,
+      "level_actions": null,
+      "level_baseline_actions": null,
+      "number_of_levels": 7,
+      "number_of_environments": 1,
+      "message": null
+    }
+  ],
+  "competition_mode": false,
+  "total_environments_completed": 0,
+  "total_environments": 1,
+  "total_levels_completed": 0,
+  "total_levels": 7,
+  "total_actions": 81
+}
+2026-10-04 22:25:50,459 | INFO | View your scorecard online: https://arcprize.org/scorecards/5b57f142-61de-496c-9fa6-7d379eec8ee1
+2026-10-04 22:25:50,459 | INFO | Received SIGINT, exiting...

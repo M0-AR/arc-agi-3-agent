@@ -62,6 +62,16 @@ notebook/
   arc3-agent-submission.ipynb   the actual Kaggle submission artifact
 docs/FINDINGS.md            the debugging story: what broke, the evidence,
                              the fix, the test that proves it
+docs/stages/                real Stage 1-4 notebooks, the original buggy
+                             Stage 5 snapshot, the fixed Stage 5 snapshot,
+                             and the stage-specific test files run at each
+                             point — see docs/stages/README.md
+docs/logs/                  6 raw debug-run logs from real games, one per
+                             point in the fix sequence — see
+                             docs/logs/README.md
+scripts/diagnostics/        the 4 scripts that produced the evidence in
+                             docs/FINDINGS.md — see
+                             scripts/diagnostics/README.md
 ```
 
 ## Running the tests
