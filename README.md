@@ -1,11 +1,22 @@
 # ARC-AGI-3 Agent
 
-An object-aware agent for [ARC Prize 2026 — ARC-AGI-3](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-3),
-built incrementally and verified against the real ARC-AGI-3 service at
-every stage — no simulated rollouts, no code borrowed wholesale from other
-submissions. Four real bugs were found and fixed along the way, each with
-direct evidence and a regression test; the full story is in
-[`docs/FINDINGS.md`](docs/FINDINGS.md).
+Two parallel approaches to [ARC Prize 2026 — ARC-AGI-3](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-3):
+
+1. **[`agent/`](agent/)** — a from-scratch, object-aware classical agent
+   (BFS over a learned state graph, connected-component perception), built
+   incrementally and verified against the real ARC-AGI-3 service at every
+   stage. Four real bugs were found and fixed along the way, each with
+   direct evidence and a regression test; the full story is in
+   [`docs/FINDINGS.md`](docs/FINDINGS.md).
+2. **[`llm-harness/`](llm-harness/)** — building on Tufa Labs' open-sourced
+   "Duck harness" (the architecture every real top scorer on the current
+   leaderboard actually uses — an LLM reasoning over the game via a Python
+   sandbox, not classical search). See
+   [`llm-harness/docs/COMPETITIVE_LANDSCAPE.md`](llm-harness/docs/COMPETITIVE_LANDSCAPE.md)
+   for the research behind that choice, and
+   [`llm-harness/docs/FINDINGS.md`](llm-harness/docs/FINDINGS.md) for the
+   Kaggle-infrastructure debugging story (data mounting, Python version
+   mismatches, GPU provisioning) getting it to actually run.
 
 ## What ARC-AGI-3 actually is
 
