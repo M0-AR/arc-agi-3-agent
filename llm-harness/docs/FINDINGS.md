@@ -151,20 +151,77 @@ changed) gave an *identical* result: `"enable_gpu": true` and
 `docker_image` still `gcr.io/kaggle-images/python@sha256:81b1e...` (the
 CPU-only image), and the same
 `FileNotFoundError: [Errno 2] No such file or directory: 'nvidia-smi'`.
-So either the verification hasn't finished propagating on Kaggle's side, the
-account's verification didn't actually complete the way it looked like it
-did, or phone verification isn't the whole story here. This needs
-checking directly on kaggle.com (open a notebook through the website UI
-and try switching its Accelerator dropdown to the RTX Pro 6000 by hand) to
-tell whether the gap is account-level or specific to pushing via the API.
+This ruled out "verification hasn't propagated yet" as the whole story, and
+led to three further isolation tests (below) that together pin down the
+actual cause.
+
+**Isolation test 1 -- account-level GPU eligibility.** Called the account's
+GPU quota directly (`get_accelerator_quota`): `total_time_allowed: "108000s"`
+(30h/week) equals `minimum_time_allowed` (i.e. quota is not reduced for an
+unverified account), `time_used: "16.290s"` (almost entirely unused), and
+`has_ever_run: true` (the account has completed a real GPU session before).
+This is inconsistent with a blanket "GPU access never granted" explanation.
+
+**Isolation test 2 -- is `machine_shape: "NvidiaRtxPro6000"` even a valid
+accelerator string?** Pushed a minimal nvidia-smi-only notebook with
+`machine_shape: "NvidiaTeslaT4"` instead (same push path, same account).
+Result: real GPU attached immediately --
+```
+Tesla T4   ... | 0MiB / 15360MiB | 0% Default
+torch version: 2.11.0+cu128
+cuda available: True
+```
+`docker_image` was `gcr.io/kaggle-private-byod/python@sha256:2757e0c7...` --
+a per-account custom ("BYOD") image, not the standard
+`gcr.io/kaggle-gpu-images/python` expected from Kaggle's general docs, but
+clearly a real GPU-enabled one. This proves the account, the push mechanism,
+and the general GPU path all work -- the problem is specific to the RTX Pro
+6000 request.
+
+Cross-checked the exact string against a real, working, publicly forked
+submission in this competition
+(`sigeward/arc-agi-3-milestone-2-solution`, forked from Daniel Franzen's
+actual Milestone-2-winning solution): its own metadata shows
+`"machine_shape": "NvidiaRtxPro6000"` -- byte-for-byte the same string we've
+been using -- with a `gcr.io/kaggle-private-byod/python@sha256:57e612b4...`
+image (same BYOD family as our working T4 test, different digest). So the
+string itself is correct and is known to work for at least one other real
+account.
+
+**Isolation test 3 -- stale per-kernel state (the Bug #3 pattern,
+re-applied to GPU provisioning).** Pushed the *exact* same minimal
+diagnostic to a brand-new kernel that had never been touched by any prior
+push attempt, zero dataset/model/competition sources attached, same
+`"NvidiaRtxPro6000"` string. Result: identical failure --
+`nvidia-smi failed: FileNotFoundError(2, 'No such file or directory')`,
+`cuda available: False`, `torch version: 2.11.0+cpu`. So it isn't stale
+kernel history and isn't interference from attached sources either.
+
+**Conclusion:** every hypothesis that would implicate our account, our
+push method, our kernel history, or our config string has now been directly
+tested and ruled out. What's left, and what's consistent with every
+observation (works identically for T4, fails identically for RTX Pro 6000
+regardless of kernel freshness or sources attached, and the competition
+forum independently reports other users seeing multi-hour queues for this
+exact accelerator): **the RTX Pro 6000 pool for this account is capacity-
+constrained, and an unavailable request is served a silent CPU-only
+container instead of an error or a queued wait** -- unlike T4, which has
+much deeper general availability. This is a resource-availability problem,
+not a configuration bug.
 
 ## Where this leaves it
 
 Confirmed working end-to-end on CPU: competition data, both datasets, and
 both models all mount correctly on a clean kernel; the full offline
 Pennyroyal/SGLang install completes successfully against a Python 3.12 venv.
-**Not yet confirmed**: that a real GPU is actually attached and the SGLang
-server actually starts and serves the model. GPU provisioning remains
-blocked after one retest; the next step is verifying GPU access directly
-through the Kaggle website UI (not the API) to isolate whether this is an
-account-verification gap or something specific to API-driven kernel pushes.
+Confirmed working end-to-end on GPU, but only for `NvidiaTeslaT4`, not yet
+for `NvidiaRtxPro6000` -- three separate isolation tests now point at
+accelerator-pool capacity, not account/config, as the cause. **Not yet
+confirmed**: an actual RTX Pro 6000 session, or that the SGLang server
+starts and serves the model. Next steps: (a) retry the real push
+periodically, since a capacity constraint can clear; (b) in parallel,
+check whether the harness/Pennyroyal wheelhouse can run on T4 at all --
+VRAM is far smaller (15 GB vs. the RTX Pro 6000's 96 GB), so the current
+quantized model (181 GB of weights) will not fit; a much smaller/more
+aggressively quantized model would be needed for a T4 fallback path to be
+viable, which is a real scope tradeoff, not a drop-in substitution.

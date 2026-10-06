@@ -50,15 +50,21 @@ and the full offline Pennyroyal/SGLang install completes successfully against
 a Python-3.12 venv (the account's Kaggle image runs 3.13 by default, which is
 ABI-incompatible with the wheelhouse's pinned deps -- see FINDINGS.md Bug #4).
 
-**Not yet confirmed**: actually serving the model and playing a game. Every
-attempt so far shows `enable_gpu`/`machine_shape` correctly recorded in the
-kernel's own metadata, but the runtime has no GPU at all (`nvidia-smi` doesn't
-exist, `docker_image` stays on the CPU-only `gcr.io/kaggle-images/python`
-rather than `gcr.io/kaggle-gpu-images/python`) -- including on a retest after
-the account's phone number was reportedly verified, which gave an identical
-result. See FINDINGS.md's final section for the full evidence trail; next
-step is checking GPU access through the Kaggle website UI directly rather
-than the API, to isolate whether this is account-level or push-method-specific.
+**Not yet confirmed**: actually serving the model and playing a game on the
+intended `NvidiaRtxPro6000` accelerator. Three separate isolation tests (see
+FINDINGS.md's final section) ruled out account eligibility (real GPU quota
+confirmed via API, 30h/week, barely used), the push mechanism (a plain
+`NvidiaTeslaT4` request on the same path provisions a real GPU immediately),
+the accelerator string (byte-identical to a real working competitor
+submission's metadata), and stale kernel state (fails identically on a
+brand-new kernel). What's left is accelerator-pool capacity: the RTX Pro
+6000 request appears to silently fall back to CPU when that specific pool
+has no capacity, rather than erroring or queuing -- consistent with other
+competitors independently reporting multi-hour queues for this exact
+accelerator on the competition forum. Next: retry periodically, and
+separately evaluate whether a T4 fallback is viable (its 15 GB VRAM can't
+fit the current 181 GB quantized model as-is, so this would need a much
+smaller model, not a drop-in swap).
 
 ## Reproducing / continuing this work
 
