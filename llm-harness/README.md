@@ -54,9 +54,11 @@ ABI-incompatible with the wheelhouse's pinned deps -- see FINDINGS.md Bug #4).
 attempt so far shows `enable_gpu`/`machine_shape` correctly recorded in the
 kernel's own metadata, but the runtime has no GPU at all (`nvidia-smi` doesn't
 exist, `docker_image` stays on the CPU-only `gcr.io/kaggle-images/python`
-rather than `gcr.io/kaggle-gpu-images/python`). This matches Kaggle's
-documented behavior for an account without completed phone verification --
-see FINDINGS.md's final section for the full evidence trail.
+rather than `gcr.io/kaggle-gpu-images/python`) -- including on a retest after
+the account's phone number was reportedly verified, which gave an identical
+result. See FINDINGS.md's final section for the full evidence trail; next
+step is checking GPU access through the Kaggle website UI directly rather
+than the API, to isolate whether this is account-level or push-method-specific.
 
 ## Reproducing / continuing this work
 

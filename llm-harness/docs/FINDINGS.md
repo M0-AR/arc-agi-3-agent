@@ -138,14 +138,25 @@ from Bug #1 *and* the working file-based path), and the kernel's
 `gcr.io/kaggle-gpu-images/python` image in every single run regardless of
 push method.
 
-**Diagnosis (not yet independently confirmed, but strongly evidenced):**
-this matches Kaggle's own documented behavior that GPU/TPU access requires
-phone number verification on the account, and that an unverified account's
-GPU request is accepted into the kernel's stored configuration but silently
-never actually provisioned at runtime -- exactly the symptom pattern
-observed. The account owner reports having since completed phone
-verification; this has not yet been re-tested against a fresh push (see
-"Next steps" below).
+**Diagnosis:** matches Kaggle's own documented behavior that GPU/TPU access
+requires phone number verification on the account, and that an unverified
+account's GPU request is accepted into the kernel's stored configuration but
+silently never actually provisioned at runtime -- exactly the symptom
+pattern observed.
+
+**Re-tested after reported phone verification -- still unresolved.** A
+fresh push (same `kernel-metadata.json`, same notebook, nothing else
+changed) gave an *identical* result: `"enable_gpu": true` and
+`"machine_shape": "NvidiaRtxPro6000"` both correctly recorded on the kernel,
+`docker_image` still `gcr.io/kaggle-images/python@sha256:81b1e...` (the
+CPU-only image), and the same
+`FileNotFoundError: [Errno 2] No such file or directory: 'nvidia-smi'`.
+So either the verification hasn't finished propagating on Kaggle's side, the
+account's verification didn't actually complete the way it looked like it
+did, or phone verification isn't the whole story here. This needs
+checking directly on kaggle.com (open a notebook through the website UI
+and try switching its Accelerator dropdown to the RTX Pro 6000 by hand) to
+tell whether the gap is account-level or specific to pushing via the API.
 
 ## Where this leaves it
 
@@ -153,6 +164,7 @@ Confirmed working end-to-end on CPU: competition data, both datasets, and
 both models all mount correctly on a clean kernel; the full offline
 Pennyroyal/SGLang install completes successfully against a Python 3.12 venv.
 **Not yet confirmed**: that a real GPU is actually attached and the SGLang
-server actually starts and serves the model. The next concrete step is a
-fresh push + run to check whether phone verification resolved the GPU
-provisioning, before any further harness-level debugging.
+server actually starts and serves the model. GPU provisioning remains
+blocked after one retest; the next step is verifying GPU access directly
+through the Kaggle website UI (not the API) to isolate whether this is an
+account-verification gap or something specific to API-driven kernel pushes.
