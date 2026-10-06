@@ -1,5 +1,25 @@
 # ARC-AGI-3 Agent
 
+## Status: wrapped up, not actively competing
+
+Two real approaches were built here, both documented in full below. The
+classical agent (`agent/`) works and is a validated, original piece of
+engineering, but it's a fundamentally weaker category than what's actually
+winning this competition — it has no general-reasoning mechanism for novel
+games. The LLM-harness approach (`llm-harness/`) is the right architecture
+(the one every real top scorer uses) and got all the way to a fully working
+data/model pipeline on Kaggle, but is blocked on an infrastructure
+constraint outside this repo's control: the specific high-VRAM accelerator
+the chosen open-weight model needs (RTX Pro 6000, 96 GB) is capacity-
+constrained for this account, confirmed by directly isolating and ruling
+out every other explanation (account eligibility, push mechanism,
+accelerator-string correctness, kernel history) — see
+[`llm-harness/docs/FINDINGS.md`](llm-harness/docs/FINDINGS.md)'s final
+section for the full evidence trail. Rather than keep retrying against a
+resource constraint, this project is being set aside in favor of a
+different competition. Both approaches are left here as complete, working
+records of what was built and found.
+
 Two parallel approaches to [ARC Prize 2026 — ARC-AGI-3](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-3):
 
 1. **[`agent/`](agent/)** — a from-scratch, object-aware classical agent
